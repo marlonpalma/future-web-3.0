@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,p,nav,ul,li,a,main,header{
+    margin: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.logo{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 35px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+nav{
+    width: 500px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.caja-negra{
+    margin-bottom: 30px;
+}
+
+.information-top{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    margin-bottom: 45px;
+}
+
+.information-top aside{
+    background: hsl(250, 92%, 10%);
+    padding: 20px;
+    max-width: 400px;
+}
+
+.information-top h2{
+    color: hsla(32, 85%, 48%, 0.726);
+    font-family: 'Inter', sans-serif;
+    font-size: 35px;
+    margin-bottom: 25px;
+}
+
+.information-top h3{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.information-top p{
+    color: hsla(248, 9%, 83%, 0.886);
+    width: 275px;
+    margin-top: 20px;
+}
+
+.information-web{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.information-web button{
+    width: 200px;
+    height: 40px;
+    color: white;
+    border: 0;
+    background: rgba(255, 0, 0, 0.751);
+    letter-spacing: 5px;
+    margin-top: 35px;
+}
+
+h1{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    width: 300px;
+    margin-top: 30px;
+}
+
+.information-web p{
+    color: black;
+    width: 330px;
+    font-size: 17px;
+    margin-top: 30px;
+    line-height: 30px;
+}
+
+/* Section Gaming */
+
+.gaming{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.gaming-article{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.gaming-article h3{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 15px;
+}
+
+.texto-gaming{
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.gaming-img{
+    overflow: hidden;
+}
+
+.number{
+    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: rgba(128, 128, 128, 0.617);
+    margin-bottom: 10px;
+}
+
+
+.icon-menu{
+    display: none;
+}
+
+@media(max-width: 450px) {
+    .image-top{
+        max-width: 450px;
+        height: 450px;
+    }
+
+    .image-top img{
+        height: 100%;
+    }
+
+    .contenedor{
+        padding: 30px;
+    }
+
+    .information-top{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .information-web{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    h1{
+        font-family: 'Inter', sans-serif;
+        font-size: 53px;
+        width: 100%;
+    }
+
+    .information-web p{
+        width: 100%;
+        font-size: 25px;
+        line-height: 2;
+    }
+
+    .gaming{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .information-top aside{
+        width: 400px;
+    }
+
+    .information-top p{
+        font-size: 17px;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .icon-menu{
+        width: 45px;
+        display: block;
+    }
+}
